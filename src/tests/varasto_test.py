@@ -23,7 +23,7 @@ class TestVarasto(unittest.TestCase):
     def test_ylimaarainen_saldo_menee_hukkaan(self):
         self.varasto = Varasto(10,12)
 
-        self.assertAlmostEqual(self.varasto.saldo, 12)
+        self.assertAlmostEqual(self.varasto.saldo, 10)
 
     def test_uudella_varastolla_oikea_tilavuus(self):
         self.assertAlmostEqual(self.varasto.tilavuus, 10)
